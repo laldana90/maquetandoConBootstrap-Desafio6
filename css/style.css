@@ -29,6 +29,10 @@ body {
   text-shadow: 1px 1px #ee74e1;
 }
 
+.navbar-toggler {
+  background-color: white;
+}
+
 
 footer {
   background-color: black;
@@ -67,7 +71,7 @@ footer {
 .animate__animated {
   display: flex;
   font-family: "Monoton", cursive;
-  font-size: 40px;
+  font-size: 30px;
   justify-content: left;
   background: -webkit-linear-gradient(
     43deg,
@@ -78,8 +82,8 @@ footer {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-right: 100px;
-  padding-left: 25px;
+  padding-right: 25px;
+  padding-left: 5px;
 
 }
 

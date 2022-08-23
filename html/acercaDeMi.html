@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+        <!-- CSS only -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous"
+      />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -22,15 +29,26 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <header class="gridHeader">
-      <h1 class="animate__animated animate__rubberBand">Acerca De Mi</h1>
-      <nav class="navegador">
-        <a class="menu" href="../index.html">Inicio</a>
-        <a class="menu" href="directoresyArtistas.html"
-          >Directores y Artistas</a
-        >
-        <a class="menu" href="generos.html">Generos</a>
-        <a class="menu" href="acercaDeMi.html">Acerca de Mi</a>
-        <a class="menu" href="contactanos.html">Contactanos</a>
+      
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <h1 class="animate__animated animate__rubberBand">Acerca De Mi</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav">
+              <a class="nav-link inicio" href="../index.html">Inicio</a>
+              <a class="nav-link dirYart" aria-current="page" href="directoresyArtistas.html">Directores y Artistas</a>
+              <a class="nav-link generos" href="generos.html">Generos</a>
+              <a class="nav-link about" href="acercaDeMi.html">Acerca De</a>
+              <a class="nav-link contact" href="contactanos.html">Contactanos</a>
+            </div>
+
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -70,13 +88,21 @@
 
     <footer class="gridFooter">
       <h1 class="tituloFooter">CinemaStudio</h1>
-      <ion-icon name="logo-facebook"></ion-icon>
-      <ion-icon name="logo-twitter"></ion-icon>
-      <ion-icon name="logo-instagram"></ion-icon>
-      <ion-icon name="logo-youtube"></ion-icon>
+     
+      <div class="spinner-border text-primary" role="status"><ion-icon name="logo-facebook"></ion-icon></div>
+      <div class="spinner-border text-info" role="status"><ion-icon name="logo-twitter"></ion-icon></div>
+      <div class="spinner-border text-warning" role="status"><ion-icon name="logo-instagram"></ion-icon></div>
+      <div class="spinner-border text-danger" role="status"><ion-icon name="logo-youtube"></ion-icon></div>
+    
       <p class="pFooter">
         &lt;&lt;&lt; Creado Por &copy; Luis Aldana | 2022 &gt;&gt;&gt;
       </p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
